@@ -3,15 +3,14 @@ import styled from 'styled-components';
 import leftArrowIcon from '../../assets/leftArrow.svg';
 import { AiOutlineUser } from 'react-icons/ai';
 
-
 const ChatHeader = () => {
   return (
     <ChatHeaderWrapper>
-        <img src={leftArrowIcon} alt="left arrow" className='left_arrow'/>
+        {/* <img src={leftArrowIcon} alt="left arrow" className='left_arrow'/> */}
         <div className='avtar'>
             <AiOutlineUser/>
         </div>
-        <text>Viren</text>
+        <p>Viren</p>
     </ChatHeaderWrapper>
   )
 }
@@ -24,7 +23,7 @@ min-height:15%;
 display:flex;
 gap:10px;
 align-items:center;
-padding:0px 5px;
+padding:0px 15px;
 
 .left_arrow{
     height:30px;
@@ -34,8 +33,8 @@ padding:0px 5px;
 
 .avtar{
     background:grey;
-    height:50px;
-    width:50px;
+    height:40px;
+    width:40px;
     border-radius:50%;
     display:flex;
     align-items:center;
